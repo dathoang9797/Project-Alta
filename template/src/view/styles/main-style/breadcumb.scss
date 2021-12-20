@@ -1,0 +1,47 @@
+@use "variable";
+
+.main-title-breadcrum {
+  margin-bottom: 1.2rem;
+  margin-top: 0.1rem;
+}
+
+//======Breadcumb=========
+.breadcb {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  font-weight: $font-weight-medium;
+  font-weight: $font-weight-medium;
+  font-size: $fs-3;
+  line-height: 2.7rem;
+  color: #0F1C49;
+
+  a {
+    opacity: 0.5;
+    color: #0F1C49;
+
+  }
+
+
+
+  &__li:first-child {
+    padding-left: 0;
+  }
+
+  &__last {
+    opacity: 1;
+
+    a {
+      font-weight: $font-weight-medium;
+      color: #2F67BA;
+
+    }
+  }
+
+  &__icon {
+    .anticon svg {
+      color: $color-breadcumb-icon;
+      font-size: 2.1rem;
+    }
+  }
+}

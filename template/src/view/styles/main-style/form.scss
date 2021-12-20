@@ -1,0 +1,87 @@
+@use "variable";
+
+.main-form {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+
+  .main-title {
+    text-align: center;
+    color: #0A4874;
+    font-size: 48px;
+    font-weight: $font-weight-bold;
+    line-height: 36px;
+    margin-bottom: 40px;
+
+    @include respond(xl-screen) {
+      font-size: 40px;
+      margin-bottom: 3.5vh;
+    }
+
+    @include respond(md-screen) {
+      font-size: 35px;
+      margin-bottom: 5vh;
+    }
+  }
+
+  .content-form {
+    width: 410px;
+    margin: 0 auto;
+
+    @include respond(sm-screen) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  .ant-input,
+  .ant-input-affix-wrapper {
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 10px 16px;
+    color: $color--ant-input;
+    line-height: 24px;
+    background-color: $color--background;
+  }
+
+  .ant-form-item-label>label {
+    color: #1D519E;
+    font-weight: $font-weight-bold;
+    font-size: 16px;
+  }
+
+  .ant-input-affix-wrapper .ant-input-password-icon {
+    color: $color--header-text;
+    height: 16px;
+    width: 21.688297271728516px;
+  }
+
+  .remember__checkbox {
+    color: $color--ant-checkbox;
+    margin-bottom: 16px;
+  }
+
+  .reCaptcha__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0;
+  }
+
+
+  .error-status {
+    color: $color--status-error;
+    font-size: 16px;
+    font-weight: $font-weight-normal;
+    line-height: 24px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+
+    span {
+      margin-right: 10px;
+    }
+  }
+
+}

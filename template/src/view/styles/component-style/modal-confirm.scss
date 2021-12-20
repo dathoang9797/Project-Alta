@@ -1,0 +1,38 @@
+@use "variable";
+
+.modal-delete-confirm{
+    .ant-modal-content{
+        .ant-modal-body{
+            .ant-modal-confirm-body{
+                .ant-modal-confirm-title{
+                    background-color: transparent;
+                    font-size: 24px;
+                    text-align: center;
+                    //margin-top: 20px;
+                    text-transform: unset;
+                }
+            }
+            .ant-modal-confirm-btns{
+                width: 100%;
+                justify-content: center;
+                display: flex;
+                flex-direction: row-reverse;
+                button:first-child{
+                    margin-left: 12px;
+                }
+                .ant-btn{
+                    width: 50%;
+                }
+                .ant-btn-dangerous{
+                    background-color: transparent;
+                    border: 1px solid $color__main;
+                    color: $color__main;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .ant-modal-confirm-btns {
+        margin-top: 0px !important;
+    }
+}

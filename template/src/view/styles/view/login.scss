@@ -1,0 +1,177 @@
+@use "variable";
+
+.or-method__box {
+  text-align: center;
+  opacity: 50%;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+// FORGOT PASSWORD FORM
+.forgot-password-form {
+  .description {
+    text-align: center;
+    color: #6C7585;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .status__box {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #6C7585;
+    text-align: center;
+  }
+
+  .error-status {
+    margin-bottom: 0;
+  }
+}
+
+// RESET PASSWORD FORM
+.reset-password-form {
+  @include respond(sm-screen) {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .error-token__box {
+
+    .main-title {
+      color: $color--status-error;
+
+    }
+
+    p {
+      color: $color--ant-checkbox;
+      font-size: 16px;
+      font-weight: $font-weight-normal;
+      line-height: 24px;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .button-center__box {
+      margin-bottom: 20px;
+    }
+  }
+
+  .button-center__box {
+    margin-bottom: 20px;
+  }
+}
+
+// OTP PAGE
+.form-login-otp {
+  .ant-form-item {
+    margin-bottom: 32px;
+  }
+
+  .ant-form-item-with-help {
+    margin-bottom: 8px;
+  }
+
+  .captcha__box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 32px;
+
+    .ant-form-item-explain,
+    .ant-form-item-explain-error {
+      margin-top: 28px;
+
+      @include respond(sm-screen) {
+        margin-top: 19px;
+
+      }
+    }
+
+    .g-recaptcha {
+      transform: scale(1.35);
+      -webkit-transform: scale(1.35);
+      transform-origin: 0 0;
+      -webkit-transform-origin: 0 0;
+
+      @include respond(sm-screen) {
+        transform: scale(1.23);
+        -webkit-transform: scale(1.23);
+      }
+    }
+  }
+
+  .otp-input__box {
+    .ant-form-item {
+      margin-bottom: 12px;
+    }
+
+    .otp__box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .status-otp {
+      margin-bottom: 12px;
+      color: #6C7585;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+
+      .ant-statistic {
+        display: inline-block;
+
+        .ant-statistic-content {
+          font-size: inherit;
+        }
+      }
+
+      span {
+        color: $color--status-error;
+      }
+    }
+
+    .link-otp {
+      display: block;
+      margin-bottom: 32px;
+      color: #6C7585;
+      font-weight: $font-weight-bold;
+    }
+
+    .error-status {
+      margin-bottom: 0px;
+    }
+
+  }
+
+  .lock-account__box {
+    @include respond(sm-screen) {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .main-title {
+      color: $color--status-error;
+
+    }
+
+    p {
+      color: $color--ant-checkbox;
+      font-size: 16px;
+      font-weight: $font-weight-normal;
+      line-height: 24px;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .button__box {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+// MAIN COLOR
+$color__main: #2F67BA;
+$color__second: #ff9911;
+$color__white: #ffffff;
+$color__black: #000000;
+$color__primary: #03031d;
+$color__secondary: #e1edff;
+
+
+// MAIN BODY
+$color--background: #ffffff;
+$color--main-text: #2f67ba;
+
+// FONT FAMILY
+$main-font: "Helvetica Neue";
+
+// FONT WEIGHT
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+// FONT SIZE
+$fs-0: 1.2rem;
+$fs-1: 1.4rem;
+$fs-2: 1.6rem;
+$fs-3: 1.8rem;
+$fs-4: 2.0rem;
+$fs-5: 2.4rem;
+
+//-----------------------------
+//|           LAYOUT          |
+//-----------------------------
+//--1. Header & Change language
+$color--header-text: #1d519e;
+
+//--2. Sidebar
+$color-sidebar: white;
+$color-sidebar-text: #03031D;
+
+//--3. Right Menu
+$color-right-menu: white;
+$color-right-menu-icon: #212121;
+$color-menu-icon: #a55959;
+$color-menu-hover: #4c4e63;
+
+//--4. Layout
+$color-background-layout: #f2f5fa;
+
+//--5. Scrollbar
+$color-scroll-bar: #C8C8C8;
+
+//-----------------------------
+//|       MAIN COMPONENT      |
+//-----------------------------
+//--1. MainTitleComponent----
+$color--main-title: #0A4874CC;
+
+//--2. Breadcrumb----
+$color-breadcumb-text: #0f1c4991;
+$color-breadcumb-icon: #6c7585;
+
+//--3. Table--
+$color-table: #2f2f41;
+$color-table-decor: #0a4874B2;
+
+//--4. Checkbox--
+$color-checkbox: #5d5fef;
+
+//--5. Form & Modal--
+$color--card: #3e3e5b;
+$color--card-menu: #040407;
+$color--ant-input: #03031d;
+$color--ant-checkbox: #6c7585;
+$color--status-error: #EC3740;
+//--6. Button--
+$color--button-orange: #FFB119;
+$color--button-normal: #237bd3;
+$color--button-cancel: #ffffff;
+//Cứ làm tiếp theo như vậy
+
+$color-border-input: #727288;
+$color-border-search: #fb8425;
+$color-background-cancel: #afaeae;
+$color-placeholder: #707070;
+$color-select: #5e5b6a;
+$color-select-active: #8f8d97;
+$color-dropdown: #30303f;
+$color-orange: #b65100;

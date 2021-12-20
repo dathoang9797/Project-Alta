@@ -1,0 +1,47 @@
+@use "variable";
+
+.otp-input__box {
+  text-align: center;
+
+  .otpContainer {
+    width: 0 auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+
+  .otp-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #0A4874;
+    margin-bottom: 8px;
+
+  }
+
+  .otpInput {
+    width: 64px;
+    height: 64px;
+    margin-right: 12px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #C8C8C8;
+    background: #FFFFFF;
+    color: #03031D;
+
+    @include respond(sm-screen) {
+      width: 40px;
+      height: 40px;
+      font-size: 14px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+}

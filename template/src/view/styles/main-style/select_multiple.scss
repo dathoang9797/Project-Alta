@@ -1,0 +1,32 @@
+@use "variable";
+
+.ant-select.ant-select-multiple.ant-select-show-search .ant-select-selector {
+  min-height: 4rem;
+  height: auto;
+  background: transparent !important;
+  color: white;
+}
+
+.ant-select-selection-overflow-item {
+  .ant-select-selection-item {
+    background: $color__main;
+    border-color: $color--background;
+
+  }
+
+  .ant-select-selection-item-remove {
+    display: flex;
+    align-items: center;
+    color: #fff
+  }
+
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) .ant-select-item-option-state {
+    color: #fff;
+  }
+
+
+  .ant-select-dropdown {
+    border-radius: 8px;
+    background-color: #3E3E5B;
+  }
+}

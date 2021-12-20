@@ -1,0 +1,24 @@
+@use "variable";
+
+::-webkit-scrollbar-track {
+	box-shadow: none;
+	background-color: transparent;
+	border-radius: 10px;
+	border: none;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+	background-color: transparent;
+	border-radius: 10px;
+	border: none;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: $color-scroll-bar;
+	border: none;
+	border-radius: 10px;
+	background-image: none;
+
+}

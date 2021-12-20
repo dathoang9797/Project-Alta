@@ -1,0 +1,66 @@
+@use "variable";
+@use "mixin";
+
+.search-label-default {
+  color: #1d519e;
+  opacity: 0.8;
+  font-weight: $font-weight-medium;
+  font-size: $fs-2;
+}
+
+.search-bar {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 1.6rem;
+
+  .ant-input-affix-wrapper,
+  input {
+    background: #ffffff;
+    border: 1px solid #c8c8c8;
+    box-sizing: border-box;
+    border-radius: 0.6rem;
+    padding: 1.1rem 1.6rem;
+    font-size: 1.4rem;
+    width: 40rem;
+    outline: none;
+
+    .ant-input-suffix {
+      svg {
+        color: #5490eb;
+        width: 2.4rem;
+        height: 2.4rem;
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  .icon-search {
+    position: absolute;
+    top: 50%;
+    right: 1.6rem;
+    transform: translateY(-50%);
+
+    svg {
+      color: #5490eb;
+      width: 2.4rem;
+      height: 2.4rem;
+      font-size: 2.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  input.form-search.ant-form-search {
+    padding-right: 6.4rem;
+    width: 30vw;
+    @include text-wrap();
+  }
+}
+
+.to-right {
+  float: right;
+}
+
+.to-left {
+  float: left;
+}

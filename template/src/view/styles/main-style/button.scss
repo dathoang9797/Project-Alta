@@ -1,0 +1,88 @@
+@use "variable";
+
+.ant-btn,
+button.ant-btn.normal-button,
+.ant-modal-confirm-btns button.ant-btn,
+button.ant-btn.cancel-button,
+.normal-button,
+.cancel-button {
+  min-width: 15rem;
+  min-height: 4.8rem;
+  border-radius: 0.8rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 0;
+  transition: All 0.3s;
+  border: 1px solid #237bd3;
+
+  background: #237bd3;
+  color: white;
+
+  &:hover {
+    background: white;
+    color: #237bd3;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.delete-button {
+  border: 1px solid #EC3740;
+  color: white;
+  color: #EC3740
+}
+
+button.ant-btn.disabled-button {
+  min-width: 15rem;
+  height: 4.8rem;
+  border-radius: 0.8rem;
+  font-weight: bold;
+  font-size: $fs-3;
+}
+
+button.ant-btn.bg-custom-button {
+  background-color: $color__main;
+  color: white;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  transition: 0.2s;
+  font-weight: $font-weight-bold;
+  height: 4rem;
+  border: none;
+}
+
+.ant-btn,
+button.ant-btn.cancel-button,
+button.ant-btn.ant-btn-dangerous,
+.cancel-button {
+  background: white;
+  color: #237bd3;
+
+  &:hover {
+    background: #237bd3;
+    color: white;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.button-center__box {
+  text-align: center;
+}
+
+.ant-btn-primary {
+  background: #237bd3;
+  color: white;
+}
+
+//button in form 
+// button.ant-btn.modal-button {
+//   width: 15rem;
+// }

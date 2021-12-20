@@ -1,0 +1,151 @@
+@use "variable";
+
+$margin: 1.3rem;
+$margin-top-body: 2.7rem;
+
+.header-component {
+  margin-right: 3.2rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+
+  &__language {
+    margin-right: $margin;
+  }
+
+  &__identify {
+    text-align: left;
+    color: $color--header-text;
+
+    .identify {
+      &__hi {
+        font-weight: 500;
+        font-size: $fs-0;
+        color: $color__primary;
+        opacity: 0.5;
+        line-height: 1.8rem;
+      }
+
+      &__place {
+        font-size: $fs-1;
+        color: $color--header-text;
+        line-height: 2.1rem;
+      }
+
+      &__admin {
+        font-weight: $font-weight-bold;
+        font-size: $fs-1;
+        color: #03031d;
+        line-height: 2.1rem;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  &__dropdown {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+
+  .bell-badge {
+    position: relative;
+    width: fit-content;
+    margin: 0 1rem;
+
+    .icon-bell {
+      font-size: 2.7rem;
+    }
+
+    .noti-badge {
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: #ff6760;
+      font-size: 1rem;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      line-height: 1.6;
+      border-radius: 1.5rem;
+      position: absolute;
+      top: -4px;
+      right: -5px;
+      box-shadow: 0 0 0 3px $color-background-layout;
+    }
+  }
+}
+
+.icon {
+  &__language {
+    position: relative;
+    font-size: 1.5rem;
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__avatar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.dropdown-menu.profile {
+  padding: 1.5rem;
+  color: white;
+  text-align: center;
+
+  .item {
+    color: #afaeae;
+    padding: 0.3rem 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-select-active;
+      color: #fff;
+    }
+  }
+}
+
+.dropdown__profile__img {
+  width: 4.8rem;
+  margin-right: $margin;
+  margin-left: $margin;
+
+  img {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 4.8rem;
+    object-fit: cover;
+  }
+}
+
+.modal-body-upload {
+  color: $color--main-text;
+
+  .wrap-image.text-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .upload-content {
+    .icon-upload {}
+  }
+}
+
+.header-component__identify {
+  cursor: pointer;
+}

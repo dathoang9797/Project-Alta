@@ -1,0 +1,56 @@
+@use "variable";
+@use "mixin";
+
+.share-area {
+  border: 1px solid #5490eb;
+  height: 491px;
+  overflow-y: auto;
+  border-radius: 12px;
+
+  h4 {
+    font-weight: bold;
+    font-size: $fs-2;
+    color: $color--main-title;
+    margin: 2.4rem 1.6rem 2rem;
+  }
+
+  .ant-collapse>.ant-collapse-item>.ant-collapse-header {
+    padding: 0.8rem 1.6rem;
+    line-height: 0;
+  }
+
+  .ant-checkbox-wrapper {
+    color: #2f67ba;
+    font-weight: $font-weight-medium;
+  }
+
+  .ant-collapse,
+  .ant-collapse>.ant-collapse-item,
+  .ant-collapse-content {
+    border: none;
+  }
+
+  .ant-collapse {
+    background-color: #e1edff;
+  }
+
+  .checkbox-area-title {
+    .ant-checkbox+span {
+      padding-left: 1rem;
+    }
+  }
+
+  .checkbox-area.ant-checkbox-wrapper {
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+
+    .ant-checkbox+span {
+      padding-left: 2.8rem;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "create-template-react-app",
+  "version": "0.0.2",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template"
+  ],
+  "description": "The base template for Create React App.",
+  "repository": {
+    "type": "git",
+    "url": "https://gitam2.altamedia.vn/tu-voc/create-template-react-app",
+    "directory": "packages/cra-template"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "bugs": {
+    "url": "https://github.com/facebook/create-react-app/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "dependencies": {
+    "styled-component": "^2.8.0"
+  }
+}

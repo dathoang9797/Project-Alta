@@ -1,0 +1,46 @@
+@use "variable";
+@use "mixin";
+
+.change-volume {
+    display: flex;
+    padding: 1rem 1.4rem;
+    width: 38rem;
+    background-color: $color--background;
+    border-radius: 6px;
+    align-items: baseline;
+
+    .ant-slider {
+        width: 26.7rem;
+        margin-left: 1.9rem;
+        margin-right: 1.4rem;
+
+        .ant-slider-handle {
+            width: 1rem;
+            height: 2.4rem;
+            border-radius: .6rem;
+            background-color: #5490EB;
+            margin-top: -1rem;
+            z-index: 3;
+        }
+
+        .ant-slider-track {
+            background: #5490EB;
+            z-index: 2;
+
+        }
+
+        .ant-slider-step {
+            background: #484E54;
+            border-radius: 4px;
+            z-index: 1;
+
+        }
+    }
+
+    p {
+        font-weight: $font-weight-medium;
+        font-size: $fs-2;
+        line-height: 2.4rem;
+        color: #03031D;
+    }
+}
