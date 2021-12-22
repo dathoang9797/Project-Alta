@@ -1,7 +1,7 @@
 import vi from './viVN';
 import en from './enUS';
 
-export interface Locale{
+export interface Locale {
     vi:any,
     en:any
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import store, { persistor } from "@core/store/redux";
-import ReactDOM from "react-dom";
+import store, { persistor } from "@core/store/redux";//50%
+import ReactDOM from "react-dom";//done
 import { Provider } from "react-redux";
 import { HashRouter as Router } from "react-router-dom";
 import App from "./App";

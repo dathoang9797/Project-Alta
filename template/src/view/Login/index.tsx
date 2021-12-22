@@ -6,6 +6,7 @@ import { useAsync } from "@hook/useAsync";
 import authenticationPresenter from "@modules/authentication/presenter";
 import NavLinkBottom from "./components/NavLinkBottom";
 import { useAltaIntl } from "@shared/hook/useTranslate";
+import { userImg, shiedImg } from "@shared/assets/images";
 
 const { login } = authenticationPresenter;
 const Login = () => {
@@ -13,7 +14,7 @@ const Login = () => {
   const location = useLocation();
   const [loginByAccount] = useAsync(login);
   const [checkError, setCheckError] = useState("");
-  const {formatMessage} = useAltaIntl()
+  const { formatMessage } = useAltaIntl();
   const onFinishFailed = (errorInfo: any) => {
     setCheckError("");
   };
@@ -77,7 +78,8 @@ const Login = () => {
                 },
               ]}
             >
-              <Input placeholder={formatMessage("login.page.userName")} />
+              <img src={userImg} alt="" />
+              <Input />
             </Form.Item>
 
             <Form.Item
@@ -92,9 +94,8 @@ const Login = () => {
                 },
               ]}
             >
-              <Input.Password
-                placeholder={formatMessage("login.page.password")}
-              />
+              <img src={shiedImg} alt="" />
+              <Input type="password" />
             </Form.Item>
 
             <Form.Item
@@ -102,7 +103,9 @@ const Login = () => {
               valuePropName="checked"
               className="remember__login"
             >
-              <Checkbox>{formatMessage("login.page.remember")}</Checkbox>
+              <a className="login-form-forgot" href="">
+                {formatMessage("login.page.forgot.password")}
+              </a>
             </Form.Item>
 
             <div>{renderError}</div>

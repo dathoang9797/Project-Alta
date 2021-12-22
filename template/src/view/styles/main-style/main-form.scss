@@ -1,11 +1,12 @@
 @use "variable";
 
 .main-form {
+  margin-top: 144px;
   font-size: $fs-2;
   line-height: 2.4rem;
   text-align: left;
 
-  .ant-picker{
+  .ant-picker {
     border-radius: 6px;
     padding: 0.9rem 1.6rem;
     width: 100%;
@@ -15,7 +16,7 @@
     color: #ff4d4f;
     text-transform: lowercase;
     display: inline-block;
-  
+
     &::first-letter {
       text-transform: uppercase;
     }
@@ -27,7 +28,7 @@
 
   .form-note {
     font-size: 1.2rem;
-    color: #484E5480;
+    color: #484e5480;
 
     &::before {
       display: inline-block;
@@ -36,7 +37,7 @@
       font-size: 1.4rem;
       font-family: SimSun, sans-serif;
       line-height: 1;
-      content: '*';
+      content: "*";
     }
   }
 
@@ -44,24 +45,22 @@
     margin-bottom: 1.6rem;
   }
 
-
   .ant-form-item-label {
     text-align: left;
   }
 
   .main-title {
     text-align: center;
-    color: #0a4874;
+    color: #373839;
     font-size: 4.8rem;
-    font-weight: 500;
+    font-weight: 800;
     margin-bottom: 4.8rem;
-
+    font-family: "Mulish", sans-serif;
   }
 
   .content-form {
     width: 41rem;
     margin: 0 auto;
-
   }
 
   .ant-input-number-input {
@@ -80,19 +79,22 @@
   .ant-input-number,
   .ant-input,
   .ant-input-affix-wrapper {
-    font-size: 1.4rem;
+    font-size: 1.9rem;
     border-radius: 6px;
-    padding: 0.9rem 1.6rem;
+    padding: 0.9rem 5rem;
     color: $color--ant-input;
-    background-color: $color--background;
+    background-color: #f2f2f2;
   }
 
-  .ant-picker-large{
+  .ant-input:focus {
+    background-color: #fff;
+  }
+  .ant- picker-large {
     width: 100%;
   }
 
-  .ant-form-item-label>label {
-    color: #1d519e;
+  .ant-form-item-label > label {
+    color: #373839;
     font-weight: $font-weight-bold;
     font-size: $fs-2;
   }
@@ -138,8 +140,6 @@
     }
   }
 
-  
-
   .ant-select:not(.ant-select-customize-input) .ant-select-selector {
     border: 1px solid #c8c8c8;
     box-sizing: border-box;
@@ -148,7 +148,7 @@
   }
 
   .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
-    height: 4.4rem
+    height: 4.4rem;
   }
 
   .ant-select-single .ant-select-selector .ant-select-selection-item,
@@ -157,31 +157,64 @@
   }
 
   .ant-select-arrow {
-    color: #2F67BA;
-    svg{
+    color: #2f67ba;
+    svg {
       width: 1.2rem;
       height: 1.2rem;
     }
   }
 
-  .ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional) {
+  .ant-form-item-label
+    > label.ant-form-item-required:not(.ant-form-item-required-mark-optional) {
     &::before {
       content: none;
       line-height: 0;
     }
   }
+  .ant-form-item-control-input-content {
+    position: relative;
+    img {
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      z-index: 10000;
+      top: 45%;
+      transform: translateY(-50%);
+      left: 15px;
+    }
+  }
 
+  .login-form-forgot {
+    float: right;
+    color: #ff7506;
+    line-height: 21px;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+
+  .normal-button {
+    width: 100%;
+    background-image: linear-gradient(to right, #ff5400 0%, #f17f21 100%);
+    border: none;
+  }
+
+  .background__button {
+    background: linear-gradient(
+      to right,
+      rgba(201, 196, 192, 1) 0%,
+      rgba(201, 196, 192, 1) 100%
+    );
+  }
 }
 
 label.ant-form-item-required:not(.ant-form-item-required-mark-optional) {
   &::after {
     display: inline-block;
-    margin-right: .4rem;
+    margin-right: 0.4rem;
     color: #ff4d4f;
     font-size: 1.4rem;
     font-family: SimSun, sans-serif;
     line-height: 1;
-    content: '*';
+    content: "*";
   }
 }
 

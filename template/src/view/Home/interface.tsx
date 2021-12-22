@@ -10,6 +10,7 @@ export interface IpropsModalAdd {
   modal: IModal;
   setModal: (arg: any) => void;
 }
+
 export interface IFormContent {
   label?:string,
   name: string,

@@ -1,121 +1,149 @@
 @use "variable";
 
 div#root {
-    height: 100%;
-    overflow: hidden;
+  height: 100%;
+  overflow: hidden;
 
-    @include respond(xxl-screen) {
-        height: auto;
-        overflow-y: scroll;
-    }
+  @include respond(xxl-screen) {
+    height: auto;
+    overflow-y: scroll;
+  }
 }
 
 .auth-page {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
+
+  .banner__img {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+
+    @include respond(sm-screen) {
+      background-image: none;
+    }
+
+    @include respond(md-screen) {
+      background-image: none;
+    }
+
+    @include respond(xl-screen) {
+      background-image: url(/bannerLogin-20409565.png);
+    }
+    // @media only screen and (max-height: 768px) {
+    //   .banner__img {
+    //     background-image: url(/bannerLogin-20409565.png);
+    //   }
+  }
+
+  .language__box {
+    position: absolute;
+    right: 24px;
+    top: 25px;
+
+    @include respond(sm-screen) {
+      right: 10px;
+      top: 10px;
+    }
+
+    .change-language__item {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      color: #1d519e;
+    }
+  }
+  .ant-col {
+    @include respond(lg-screen) {
+      margin: 0 auto;
+    }
+    @include respond(xl-screen) {
+      margin: 0 0;
+      margin-left: auto;
+    }
+    .main__box {
+      width: 577px;
+      margin: 0 auto;
+      position: relative;
+
+      @include respond(sm-screen) {
+        width: 100%;
+      }
+
+      .logo__box {
+        width: 150.86px;
+        margin-left: auto;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-right: 65px;
+
+        @include respond(sm-screen) {
+          margin: 0 auto;
+          margin-top: 70px;
+          margin-bottom: 40px;
+        }
+
+        @include respond(xl-screen) {
+          width: 150.86px;
+          margin: 0 0;
+          margin-left: auto;
+          margin-top: 30px;
+          margin-right: 65px;
+        }
+
+        @include respond(xxl-screen) {
+          width: 150.86px;
+          margin: 0 0;
+          margin-left: auto;
+          margin-top: 30px;
+          margin-right: 65px;
+        }
+
+        img {
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .nav-link__bottom {
+    color: #ff7506;
+    font-size: 16px;
+    font-weight: $font-weight-bold;
+    line-height: 24px;
+    position: absolute;
+    bottom: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include respond(xxl-screen) {
+      bottom: 16px;
+    }
+
+    @include respond(lg-screen) {
+      position: relative;
+      margin-top: 50px;
+      text-align: right;
+    }
 
     @media only screen and (max-height: 768px) {
-        height: auto;
-        overflow: visible;
+      position: relative;
+      margin-top: 50px;
+      text-align: right;
     }
+  }
 
-    .language__box {
-        position: absolute;
-        right: 24px;
-        top: 25px;
+  // .banner__img {
+  //     width: 100%;
+  //     height: 100vh;
+  //     object-fit: cover;
 
-        @include respond(sm-screen) {
-            right: 10px;
-            top: 10px;
-        }
+  //     @include respond(xxl-screen) {
+  //         height: 100%;
 
-        .change-language__item {
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 30px;
-            color: #1D519E;
-
-        }
-    }
-
-    .main__box {
-        width: 577px;
-        margin: 0 auto;
-
-        @include respond(sm-screen) {
-            width: 100%;
-        }
-
-
-        .logo__box {
-            width: 333px;
-            margin: 0 auto;
-            margin-top: 172px;
-            margin-bottom: 92px;
-
-            @include respond(xxl-screen) {
-                width: 250px;
-                margin-top: 50px;
-                margin-bottom: 35px;
-            }
-
-            @include respond(xl-screen) {
-                width: 200px;
-                margin-top: 40px;
-                margin-bottom: 25px;
-            }
-
-            @include respond(sm-screen) {
-                margin-top: 70px;
-                margin-bottom: 40px;
-            }
-
-            img {
-                height: auto;
-                width: 100%;
-            }
-        }
-    }
-
-    .nav-link__bottom {
-        color: $color--main-text;
-        font-size: 16px;
-        font-weight: $font-weight-bold;
-        line-height: 24px;
-        position: absolute;
-        bottom: 36px;
-        left: 50%;
-        transform: translateX(-50%);
-
-        @include respond(xxl-screen) {
-            bottom: 16px;
-
-        }
-
-        @include respond(lg-screen) {
-            position: relative;
-            margin-top: 50px;
-            text-align: center;
-
-        }
-
-        @media only screen and (max-height: 768px) {
-            position: relative;
-            margin-top: 50px;
-            text-align: center;
-        }
-
-
-    }
-
-    .banner__img {
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;
-
-        @include respond(xxl-screen) {
-            height: 100%;
-
-        }
-    }
+  //     }
+  // }
 }

@@ -40,7 +40,7 @@ const MainTitleComponent = ({
   }
   return (
     <div className="main-title-breadcrum">
-      {breadcrumbs ? (
+      {breadcrumbs ? (   
         <BreadcumbComponent
           breadcrumbs={breadcrumbs}
           className={classBreadcumb}

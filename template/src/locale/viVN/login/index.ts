@@ -1,12 +1,12 @@
 export default {
   "login.page.title": "Đăng nhập",
-  "login.page.userName": "Tên tài khoản",
+  "login.page.userName": "Tên đăng nhập",
   "login.page.password": "Mật khẩu",
   "login.page.remember": "Ghi nhớ đăng nhập",
   "login.page.mobile": "Số điện thoại",
   "login.page.otp": "Mã OTP",
 
-  "login.page.forgot.password": "Quên mật khẩu",
+  "login.page.forgot.password": "Quên mật khẩu?",
   "login.page.resend.otp": "Gửi lại OTP",
   "login.page.refill.mobile": "Nhập lại số điện thoại",
 

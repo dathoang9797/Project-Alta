@@ -14,7 +14,7 @@ export default {
   "common.button.accept": "Xác nhận",
   "common.button.resend.link": "Gửi lại link",
   "common.button.return": "Quay lại",
-  "link.return.login": "Quay lại trang đăng nhập",
+  "link.return.login": "Quay lại trang chủ",
 
   "common.required": "vui lòng điền",
   "common.whitespace":"vui lòng không nhập khoảng trắng",

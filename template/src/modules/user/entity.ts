@@ -27,7 +27,6 @@ class UserEntity {
 }
 
 export class AccountPermissionEntity {
-  
   accountPermissionId: string;
   permissionCode: string;
   accountId: string;

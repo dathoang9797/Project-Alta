@@ -117,6 +117,7 @@ const LoginByOTP = () => {
   return (
     <>
       <div className="main-form form-login-otp">
+        <h1>Hello</h1>
         {!pageOTP ? (
           <>
             <h3 className="main-title">{useTranslate("login.page.title")}</h3>

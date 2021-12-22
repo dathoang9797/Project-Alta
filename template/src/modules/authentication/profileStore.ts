@@ -1,17 +1,6 @@
 import { createAction, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import User from "@modules/user/entity";
-interface IStore {
-  statusLogin?: boolean;
-  user?: User;
-  listPermissionCode?: Array<string>;
-}
 
-export const removeProfile = createAction<number>(
-  "authentication/removeProfile"
-);
-export const setToken = createAction<{ token: any; remember: boolean }>(
-  "authentication/setToken"
-);
 interface IStore {
   statusLogin?: boolean;
   user?: User;
@@ -20,6 +9,13 @@ interface IStore {
   token?: string;
   remember: boolean;
 }
+
+export const removeProfile = createAction<number>(
+  "authentication/removeProfile"
+);
+export const setToken = createAction<{ token: any; remember: boolean }>(
+  "authentication/setToken"
+);
 
 const profileStore = createSlice({
   name: "profileStore",

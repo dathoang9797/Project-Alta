@@ -1,14 +1,14 @@
-import { logger } from 'redux-logger';
-import { createStore, applyMiddleware } from 'redux';
-import { createWhitelistFilter } from 'redux-persist-transform-filter';
-import storage from 'redux-persist/lib/storage'
-import { persistStore, persistReducer, PersistConfig } from 'redux-persist'
+import { logger } from 'redux-logger';//done
+import { createStore, applyMiddleware } from 'redux';//done
+import { createWhitelistFilter } from 'redux-persist-transform-filter';//done
+import storage from 'redux-persist/lib/storage'// done defaults to localStorage for web
+import { persistStore, persistReducer, PersistConfig } from 'redux-persist'//done
 import appReducer, { RootState } from '@modules/index';
-import CONFIG from '@config/index';
+import CONFIG from '@config/index';//done
 import { Selector } from 'react-redux';
 
 const profile = createWhitelistFilter('profile', ['token', "remember"]);
-const settingStore = createWhitelistFilter('settingStore', ['language'])
+const settingStore = createWhitelistFilter('settingStore', ['language']);
 
 const persistConfig:PersistConfig<RootState> = {
   key: CONFIG.APP_NAME,

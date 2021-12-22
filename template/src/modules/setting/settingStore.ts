@@ -3,7 +3,6 @@ import { Locale } from "@locale/index";
 interface IStore {
   language: keyof Locale;
 }
-
 const settingStore = createSlice({
   name: "settingStore",
   initialState: {

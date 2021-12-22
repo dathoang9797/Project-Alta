@@ -1,13 +1,14 @@
 @use "variable";
 
 .main-form {
+  
   font-size: 16px;
   line-height: 24px;
   text-align: left;
 
   .main-title {
     text-align: center;
-    color: #0A4874;
+    color: #0a4874;
     font-size: 48px;
     font-weight: $font-weight-bold;
     line-height: 36px;
@@ -44,8 +45,8 @@
     background-color: $color--background;
   }
 
-  .ant-form-item-label>label {
-    color: #1D519E;
+  .ant-form-item-label > label {
+    color: #1d519e;
     font-weight: $font-weight-bold;
     font-size: 16px;
   }
@@ -68,7 +69,6 @@
     margin: 32px 0;
   }
 
-
   .error-status {
     color: $color--status-error;
     font-size: 16px;
@@ -83,5 +83,4 @@
       margin-right: 10px;
     }
   }
-
 }

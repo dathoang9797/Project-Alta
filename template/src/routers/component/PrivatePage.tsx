@@ -48,7 +48,9 @@ const PrivatePage: React.FC = () => {
   //   return  <Switch></Switch>
   // }
   return (
-    <Switch>{ShowRouter({ routers: privateRouter, MasterLayout: DefaultLayout })}</Switch>
+    <Switch>
+      {ShowRouter({ routers: privateRouter, MasterLayout: DefaultLayout })}
+    </Switch>
   );
 };
 export default PrivatePage;
